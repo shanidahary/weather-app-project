@@ -144,7 +144,7 @@ const Search = ({ onLocationSelect, setSearchError }) => {
       <div className="relative bg-neutral-800 rounded-xl">
         {/* Icon */}
         <img
-          src="./weather-app-main/assets/images/icon-search.svg"
+          src="/weather-app-project/weather-app-main/assets/images/icon-search.svg"
           alt="Search"
           className="absolute left-3 top-1/2 -translate-y-1/2 w-6 h-6 opacity-70 2xl:w-[50px] 2xl:h-[35px]"
         />

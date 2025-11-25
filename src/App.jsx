@@ -5,13 +5,6 @@ import axios from "axios";
 import MainWeatherCard from "./components/MainWeatherCard";
 import StatsRow from "./components/StatsRow";
 import DailyWeatherCard from "./components/DailyWeatherCard";
-import clearSkyIcon from "../weather-app-main/assets/images/icon-overcast.webp";
-import cloudyIcon from "../weather-app-main/assets/images/icon-partly-cloudy.webp";
-import fogIcon from "../weather-app-main/assets/images/icon-fog.webp";
-import drizzleIcon from "../weather-app-main/assets/images/icon-drizzle.webp";
-import rainIcon from "../weather-app-main/assets/images/icon-rain.webp";
-import snowIcon from "../weather-app-main/assets/images/icon-snow.webp";
-import stormIcon from "../weather-app-main/assets/images/icon-storm.webp";
 import HourlyForecastCard from "./components/HourlyForecastCard";
 
 const App = () => {
@@ -79,29 +72,89 @@ const App = () => {
   // Extract the icons according to the weather code according to the Api
   const getWeather = (code) => {
     if (code === 0)
-      return <img className="w-[60px] 2xl-[100px]" src={clearSkyIcon} />;
+      return (
+        <img
+          className="w-[60px] 2xl-[100px]"
+          src="/weather-app-project/weather-app-main/assets/images/icon-overcast.webp"
+        />
+      );
     if ([1, 2, 3].includes(code))
-      return <img className="w-[60px] 2xl-[100px]" src={cloudyIcon} />;
+      return (
+        <img
+          className="w-[60px] 2xl-[100px]"
+          src="/weather-app-project/weather-app-main/assets/images/icon-partly-cloudy.webp"
+        />
+      );
     if ([45, 48].includes(code))
-      return <img className="w-[60px] 2xl-[100px]" src={fogIcon} />;
+      return (
+        <img
+          className="w-[60px] 2xl-[100px]"
+          src="/weather-app-project/weather-app-main/assets/images/icon-fog.webp"
+        />
+      );
     if ([51, 53, 55].includes(code))
-      return <img className="w-[60px] 2xl-[100px]" src={drizzleIcon} />;
+      return (
+        <img
+          className="w-[60px] 2xl-[100px]"
+          src="/weather-app-project/weather-app-main/assets/images/icon-drizzle.webp"
+        />
+      );
     if ([56, 57].includes(code))
-      return <img className="w-[60px] 2xl-[100px]" src={drizzleIcon} />;
+      return (
+        <img
+          className="w-[60px] 2xl-[100px]"
+          src="/weather-app-project/weather-app-main/assets/images/icon-drizzle.webp"
+        />
+      );
     if ([61, 63, 65].includes(code))
-      return <img className="w-[60px] 2xl-[100px]" src={rainIcon} />;
+      return (
+        <img
+          className="w-[60px] 2xl-[100px]"
+          src="/weather-app-project/weather-app-main/assets/images/icon-rain.webp"
+        />
+      );
     if ([66, 67].includes(code))
-      return <img className="w-[60px] 2xl-[100px]" src={rainIcon} />;
+      return (
+        <img
+          className="w-[60px] 2xl-[100px]"
+          src="/weather-app-project/weather-app-main/assets/images/icon-rain.webp"
+        />
+      );
     if ([71, 73, 75, 77].includes(code))
-      return <img className="w-[60px] 2xl-[100px]" src={snowIcon} />;
+      return (
+        <img
+          className="w-[60px] 2xl-[100px]"
+          src="/weather-app-project/weather-app-main/assets/images/icon-snow.webp"
+        />
+      );
     if ([80, 81, 82].includes(code))
-      return <img className="w-[60px] 2xl-[100px]" src={rainIcon} />;
+      return (
+        <img
+          className="w-[60px] 2xl-[100px]"
+          src="/weather-app-project/weather-app-main/assets/images/icon-rain.webp"
+        />
+      );
     if ([85, 86].includes(code))
-      return <img className="w-[60px] 2xl-[100px]" src={snowIcon} />;
+      return (
+        <img
+          className="w-[60px] 2xl-[100px]"
+          src="/weather-app-project/weather-app-main/assets/images/icon-snow.webp"
+        />
+      );
     if (code === 95)
-      return <img className="w-[60px] 2xl-[100px]" src={stormIcon} />;
+      return (
+        <img
+          className="w-[60px] 2xl-[100px]"
+          src="/weather-app-project/weather-app-main/assets/images/icon-storm.webp"
+        />
+      );
     if ([96, 99].includes(code))
-      return <img className="w-[60px] 2xl-[100px]" src={stormIcon} />;
+      return (
+        <img
+          className="w-[60px] 2xl-[100px]"
+          src="/weather-app-project/weather-app-main/assets/images/icon-storm.webp"
+        />
+      );
     return "❔";
   };
 
