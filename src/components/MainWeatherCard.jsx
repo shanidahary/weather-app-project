@@ -16,7 +16,7 @@ const MainWeatherCard = ({
   });
   return (
     <Card
-      className={`w-full max-w-[450px] h-[250px] md:h-[200px] xl:max-w-[1500px] xl:min-h-[300px] md:flex-row px-3 justify-between pt-8 pb-8 items-center bg-[url('./weather-app-main/assets/images/bg-today-large.svg')] bg-center bg-cover text-white border-none lg:max-w-[600px] lg:h-[250px] 2xl:max-w-[1500px] 2xl:min-h-[500px] 2xl:px-14 2xl:py-12 ${className}`}
+      className={`w-full max-w-[450px] h-[250px] md:h-[200px] xl:max-w-[1500px] xl:min-h-[300px] md:flex-row px-3 justify-between pt-8 pb-8 items-center bg-[url('/weather-app-project/weather-app-main/assets/images/bg-today-large.svg')] bg-center bg-cover text-white border-none lg:max-w-[600px] lg:h-[250px] 2xl:max-w-[1500px] 2xl:min-h-[500px] 2xl:px-14 2xl:py-12 ${className}`}
     >
       <div className="flex flex-col items-center gap-2 text-[25px] 2xl:items-start 2xl:gap-6">
         <span className="font-medium text-[30px] md:text-[24px] lg:text-[32px] xl:text-[40px] 2xl:text-[75px]">

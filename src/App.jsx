@@ -244,7 +244,7 @@ const App = () => {
         {/* Header: logo + units button */}
         <div className="flex justify-between gap-4 mt-8 w-full items-center 2xl:mt-12">
           <img
-            src="./weather-app-main/assets/images/logo.svg"
+            src="/weather-app-project/weather-app-main/assets/images/logo.svg"
             className="w-[120px] md:w-[197px] lg:w-[250px] 2xl:w-[380px]"
             alt=""
           />

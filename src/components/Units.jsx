@@ -81,7 +81,7 @@ const Units = ({ setUnitSettings, unitSettings }) => {
           className="flex items-center w-[80px] gap-2 bg-neutral-700 text-white text-[15px] border-none px-5 lg:w-[120px] lg:h-[50px] 2xl:w-[200px] 2xl:h-[80px]"
         >
           <img
-            src="./weather-app-main/assets/images/icon-units.svg"
+            src="/weather-app-project/weather-app-main/assets/images/icon-units.svg"
             alt="Units Icon"
             className="w-[12px] lg:w-[17px] 2xl:w-[30px]"
           ></img>
