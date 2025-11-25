@@ -24,12 +24,12 @@ const Search = ({ onLocationSelect, setSearchError }) => {
         trimmedValue
       )}&count=10&language=en&format=json`;
 
-      console.log("Fetching:", url); // <--- CHECK IF THIS PRINTS
+      console.log("Fetching:", url);
 
       const res = await axios.get(url);
       let results = res.data.results || [];
 
-      console.log("API RESPONSE:", res.data); // <---- THIS MUST PRINT
+      console.log("API RESPONSE:", res.data);
 
       // 1. Keep only cities starting with what user typed
       results = results.filter((city) =>
